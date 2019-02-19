@@ -1,0 +1,36 @@
+<html>
+  <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="static/style.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-amber.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+      <div id='choose_filters' >
+        <form action="{{ url_for('handle_data') }}" method="post">
+              <select name="layer_select">
+                {% for layer in inp_lay %}
+                      Layers : <option value="{{ layer }}">{{ layer }}</option>
+                {% endfor %}  
+              </select>
+               Filters: <input type="text" name="filter_nb"><br>
+               <input type="submit" value="Submit">
+        </form>
+      </div>
+      <div id='img'>
+      <div class="w3-third w3-section">
+        <div class="w3-card-4">
+            {% for key, value in imgFolder.items() %}
+            <div>
+                <p>{{key}}</p>
+                {% for img in value %}
+                    <img src= "static/img/{{key}}/{{img}}" class='center'/>
+                {% endfor %}
+            </div>
+            {% endfor %}
+            </div>
+          </div>
+      </div>
+  </body>
+</html>
