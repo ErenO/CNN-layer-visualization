@@ -1,4 +1,4 @@
-Web app for filters visualisation
+**Web app for filters visualisation**
 
 If you choose the layer, then put the filter number, it will show you the image of the filter, and save it to static/img/layers_name/
 If you put no filter number, it will show you all the filters of the layer
