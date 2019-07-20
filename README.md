@@ -14,8 +14,14 @@ Here are some examples :
 All you have to do, is to replace the code of the function make_model() by your model architecture, in visualize.py,
 put your model in the folder, and change the model's name in app.py, import also all the necessary dependencies for your model.
 
-To run flask, change the path to app.py in run.sh, execute the command 'source run.sh',
-then 'flask run --port 5000 --host 0.0.0.0'.
+To run flask, change the path to app.py in run.sh, 
+execute the command:
+<pre><code>source run.sh
+</code></pre> 
+then:
+<pre><code>flask run --port 5000 --host 0.0.0.0
+</code></pre>
+
 
 Make sure to export the path to app.py before running the app 
 <pre><code>export FLASK_APP='root/your_path
