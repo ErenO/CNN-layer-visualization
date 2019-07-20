@@ -17,4 +17,6 @@ put your model in the folder, and change the model's name in app.py, import also
 To run flask, change the path to app.py in run.sh, execute the command 'source run.sh',
 then 'flask run --port 5000 --host 0.0.0.0'.
 
-Make sure to export the path before to app.py "export FLASK_APP='root/your_path'" 
+Make sure to export the path to app.py before running the app 
+<pre><code>export FLASK_APP='root/your_path
+</code></pre> 
