@@ -4,13 +4,13 @@ An app to show the image of maximization of the filter's activation.
 You just have to choose the layer, then put the filter number, it will automatically save it to static/img/layers_name/
 If you put no filter number, it will show you all the filters of the layer. 
 
-![alt text](https://github.com/appchoose/layer-visualisation/blob/master/image/img3.png)
+![alt text](https://github.com/ErenO/CNN-layer-visualization/blob/master/image/img3.png)
 
 Here are some examples : 
 
-![alt text](https://github.com/appchoose/layer-visualisation/blob/master/image/img1.png)
+![alt text](https://github.com/ErenO/CNN-layer-visualization/blob/master/image/img1.png)
 
-![alt text](https://github.com/appchoose/layer-visualisation/blob/master/image/img2.png)
+![alt text](https://github.com/ErenO/CNN-layer-visualization/blob/master/image/img2.png)
 
 All you have to do, is to replace the code of the function make_model() by your model architecture, in visualize.py,
 put your model in the folder, and change the model's name in app.py, import also all the necessary dependencies for your model.
